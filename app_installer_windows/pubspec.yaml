@@ -1,0 +1,29 @@
+name: app_installer_windows
+description: A new Flutter plugin project.
+version: 0.0.1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=2.8.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  app_installer_platform_interface:
+    path: ../app_installer_platform_interface
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+flutter:
+  plugin:
+    implements: app_installer
+    platforms:
+      windows:
+        dartPluginClass: AppInstallerWindows
+        pluginClass: AppInstallerWindows
+        
