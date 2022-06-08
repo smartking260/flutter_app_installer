@@ -18,11 +18,19 @@ dependencies:
     sdk: flutter
 
   app_installer_platform_interface:
-    path: ../app_installer_platform_interface
+    git:
+      url: https://github.com/smartking260/flutter_app_installer.git
+      path: app_installer_platform_interface
   app_installer_windows:
-    path: ../app_installer_windows
+    git:
+      url: https://github.com/smartking260/flutter_app_installer.git
+      path: app_installer_windows
+
   app_installer_android:
-    path: ../app_installer_android
+    git:
+      url: https://github.com/smartking260/flutter_app_installer.git
+      path: app_installer_android
+
   
 
 dev_dependencies:
